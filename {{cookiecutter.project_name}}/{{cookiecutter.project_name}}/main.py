@@ -11,7 +11,7 @@ from gi.repository import Gtk, Adw
 class MainWindow(Gtk.ApplicationWindow):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.set_title("Calculator")
+        self.set_title("{{cookiecutter.friendly_name}}")
         self.stack: list[Union[int, float]] = []
         self.value_complete: bool = False
 
