@@ -1,0 +1,9 @@
+{
+    "project_name": "gtk-example",
+    "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
+    "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
+    "author": "Dan Yeaw",
+    "email": "dan@yeaw.me",
+    "github_user": "danyeaw",
+    "version": "0.0.0"
+}
