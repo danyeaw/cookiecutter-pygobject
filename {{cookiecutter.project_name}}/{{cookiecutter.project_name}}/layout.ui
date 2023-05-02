@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.2 -->
+<interface>
+  <!-- interface-name layout.ui -->
+  <requires lib="gtk" version="4.6"/>
+  <object class="GtkGrid" id="grid">
+    <property name="column-spacing">2</property>
+    <property name="margin-bottom">2</property>
+    <property name="margin-end">2</property>
+    <property name="margin-start">2</property>
+    <property name="margin-top">2</property>
+    <property name="row-spacing">2</property>
+    <child>
+      <object class="GtkBox">
+        <property name="halign">end</property>
+        <property name="margin-bottom">3</property>
+        <property name="margin-end">3</property>
+        <child>
+          <object class="GtkLabel" id="last_in_display"/>
+        </child>
+        <layout>
+          <property name="column">0</property>
+          <property name="column-span">4</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="halign">end</property>
+        <property name="margin-end">3</property>
+        <property name="margin-top">3</property>
+        <child>
+          <object class="GtkLabel" id="first_in_display"/>
+        </child>
+        <layout>
+          <property name="column">0</property>
+          <property name="column-span">4</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button1">
+        <property name="label">1</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button2">
+        <property name="label">2</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button3">
+        <property name="label">3</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button-add">
+        <property name="label">+</property>
+        <signal name="clicked" handler="on_operator_clicked"/>
+        <layout>
+          <property name="column">3</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button4">
+        <property name="label">4</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">0</property>
+          <property name="column-span">1</property>
+          <property name="row">3</property>
+          <property name="row-span">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button5">
+        <property name="label">5</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button6">
+        <property name="label">6</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button-subtract">
+        <property name="label">-</property>
+        <signal name="clicked" handler="on_operator_clicked"/>
+        <layout>
+          <property name="column">3</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button7">
+        <property name="label">7</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button8">
+        <property name="label">8</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button9">
+        <property name="label">9</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button-multiply">
+        <property name="label">*</property>
+        <signal name="clicked" handler="on_operator_clicked"/>
+        <layout>
+          <property name="column">3</property>
+          <property name="row">4</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="clear_button">
+        <property name="label">🆑</property>
+        <signal name="clicked" handler="on_clear_clicked"/>
+        <layout>
+          <property name="column">0</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button0">
+        <property name="label">0</property>
+        <signal name="clicked" handler="on_number_clicked"/>
+        <layout>
+          <property name="column">1</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="enter_button">
+        <property name="label">↩️</property>
+        <signal name="clicked" handler="on_operator_clicked"/>
+        <layout>
+          <property name="column">2</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button-divide">
+        <property name="label">/</property>
+        <signal name="clicked" handler="on_operator_clicked"/>
+        <layout>
+          <property name="column">3</property>
+          <property name="row">5</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

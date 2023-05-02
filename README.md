@@ -1,2 +1,8 @@
 # cookiecutter-pygobject
-Cookiecutter template for Python GTK projects
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for Python GTK projects
+
+## Usage
+
+```commandline
+cookiecutter gh:danyeaw/cookiecutter-pygobject
+```
