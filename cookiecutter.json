@@ -6,5 +6,6 @@
     "email": "dan@yeaw.me",
     "github_user": "danyeaw",
     "version": "0.0.0",
+    "copyright_year": "{% now 'utc', '%Y' %}",
     "license": "MIT"
 }
