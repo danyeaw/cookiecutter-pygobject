@@ -5,5 +5,6 @@
     "author": "Dan Yeaw",
     "email": "dan@yeaw.me",
     "github_user": "danyeaw",
-    "version": "0.0.0"
+    "version": "0.0.0",
+    "license": "MIT"
 }
